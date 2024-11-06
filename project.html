@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/style.css">
+<style>
+    
+body {
+background-color:white;
+}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #38444d;
+border-radius: 20px;
+}
+
+li {
+float: left;
+}
+
+li a, .dropbtn {
+display: inline-block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+background-color: red;
+}
+
+li.dropdown {
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1689915638536-4b026a60342d?q=80&w=1938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+p. {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.picture {
+    border: 5px solid black;
+    width: 100%;
+    }
+footer {
+            background-color: #38444d;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            bottom: 0;
+        }
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        label{
+        display: block;
+        margin-bottom: 10px;        
+    }
+    {
+        background-color: rgba(255, 255,255,0.77);
+        border-radius: 10px;
+        padding:50px;
+        width: 400px;   
+    a.}
+    input[type="text"], input[type=email], input[type="password"], select,textarea{
+     width:40%;
+     padding: 10px;
+     border: none;
+     border-radius: 5px;
+    }
+    input[type="submit"], input[type="reset"]{
+        background-color: rgba(225, 83, 18, 0.746);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 20px;
+        border: none;
+        transition: 0.5s;
+    }
+    input:focus, textarea:focus, select:focus{
+        background-color: antiquewhite;
+    }
+    input[type="submit"]:hover,
+    input[type="reset"]:hover{
+        background-color: rgba(218,82 , 9, 0.837);
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+    h2{
+        text-align: center;
+    }
+    .image-flexbox {
+    display: flex; /* Activates Flexbox layout */
+    gap: 10px; /* Adds space between images */
+}
+.image-flexbox img {
+    width: 200px; /* Sets width of each image */
+    height: auto; /* Maintains aspect ratio */
+}
+
+</style>
+</head>
+<link rel="stylesheet" href="dropdowncontent.html">
+<body>
+
+<figure>
+  <img class='picture'img src="img_paris.jpg" alt="Paris" height="400" ></a>
+</figure>
+<h1>OUR SERVICES:</h1>
+<ol type="1">
+    <h2><li>visa services:</li></h2>
+<table>
+    <tr>
+      <th>Country</th>
+      <th>Price</th>
+      <th>Validity</th>
+    </tr>
+    <tr>
+      <td>Bahrain<a href="https://www.bahrain.bh/">click here</a></td>
+      <td>2950</td>
+      <td>14Days</td>
+    </tr>
+    <tr>
+      <td>Bahrain<a href="https://www.bahrain.bh/">click here</a></td>
+      <td>4850</td>
+      <td>30Days</td>
+    </tr>
+    <tr>
+      <td>Bahrain<a href="https://www.bahrain.bh/">click here</a></td>
+      <td>10950</td>
+      <td>1Year</td>
+    </tr>
+    <tr>
+      <td>Qatar<a href="https://www.gco.gov.qa/en/">click here</a></td>
+      <td>3000</td>
+      <td>30Days</td>
+    </tr>
+    <tr>
+      <td>Oman<a href="https://oman.om/en">click here</a></td>
+      <td>1550</td>
+      <td>10Days</td>
+    </tr>
+    <tr>
+      <td>Oman<a href="https://oman.om/en">click here</a></td>
+      <td>4650</td>
+      <td>30Days</td>
+    </tr>
+    <tr>
+        <td>UAE<a href="https://u.ae/en">click here</a></td>
+        <td>6700</td>
+        <td>30Days</td>
+      </tr>
+  </table>
+<h2 class="a"><li>Ticketing</li></h2>
+  <form action="abc.php" method="post">
+      <h2>:</h2>
+      <label for="name">First Name:</label>
+      <input type="text" placeholder="First Name" id="name" name="name"><br>
+      <label for="name">Surname:</label>
+      <input type="text" placeholder="Surname" id="name" name="name"><br>
+      <label for="number">Passport Number:</label>
+      <input type="text" placeholder='Passport Number' id="name" name="name"><br>
+      <label form="email" >Email:</label>
+      <input type="email" id="email" name="email"><br>
+      <label for="cities">select city</label>
+<select name="cities" id="cities">
+<option value="select">select</option>
+<option value="noida">noida</option> 
+<option value="delhi">delhi</option>
+<option value="mumbai">mumbai</option>
+<option value="bengaluru">bengaluru</option> 
+</select><br>
+Travel date:<input type="datetime-local" 
+id="Test_DatetimeLocal"><br>
+D.O.B<input type="datetime-local" 
+id="Test_DatetimeLocal"><br>
+<label for="address">address:</label>  
+<textarea name="" id="address" cols="30" rows="5" name="address"></textarea><br>
+<label for="gender"> gender:</label>
+<input type="radio" value="male" name="gender">male 
+<input type="radio" value="female" name="female">female  
+<input type="radio" value="others" name="others">others
+<br>
+<label for="Type of travel">Type of travel:</label>
+<input type="radio" value="male" name="gender">Oneway 
+<input type="radio" value="female" name="female">Roundtrip  
+<br>
+<label for="upload">upload file:</label> 
+<input type="file" name="file"><br> <br>
+<input type="submit" value="submit form">
+<input type="reset"
+ </form>
+ <p>
+  <h2><u>About us:</u></h2>
+<pre>
+<h3>Welcome to Easy Travels</h3>
+<b>Your Gateway to Memorable Journeys
+
+At Easy Travels, we are dedicated to making your travel dreams a reality with our comprehensive services. Whether you're planning a trip for business or leisure, we’ve got you covered with:
+<ol type="1">
+<li>Ticketing Services: Seamlessly book your flights with us.</li>
+
+<li>Visa Services: Hassle-free visa processing for various destinations.</li>
+
+<li>Umra Services: Expertly arranged for a spiritually fulfilling experience.</li>
+</ol>
+Why Choose Easy Travels?
+
+Competitive Rates: We offer high-quality services at low rates, ensuring you get the best value for your money.
+
+Specialization in Gulf Countries: Our expertise lies in planning trips to the Gulf, making us your perfect partner for these destinations.
+
+Excellent Customer Service: Our customers praise our efficient service and competitive pricing.
+
+Customer Reviews
+
+"Very good service and low rates" - Happy Traveler
+
+How to Book
+
+Booking with Easy Travels is simple. Just WhatsApp or call us at 8606673057 to start planning your next adventure.</b>
+ 
+</pre>
+<i>click on the image to get our instagram</i>
+<a href="https://www.instagram.com/easytravels.llp/" >
+  <img src="2024-02-24.jpg" alt="Easy Travels" height="100"></a>
+</p>
+<div class="image-flexbox">
+  <img src="best-price.webp"  alt="Image 1">
+  <img src="easy-booking.webp" alt="Image 2">
+  <img src="safe-icon.webp" alt="Image 3">
+  <img src="support.webp" alt="Image 4">
+</div>
+<footer>
+  <p>&copy; 2024 Easy Travels. All rights reserved.</p>
+  <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#about-us">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#contact-us">Contact Us</a>
+      <a href="https://www.instagram.com/easytravels.llp/">Instagram</a>
+  </div>
+  <p>Contact us at <a href="tel:8606673057">8606673057</a></p>
+  <figure>
+    <img class='picture'img src="airplane-ang-wing-tip.png" alt="Aeroplane" height="550"></a>
+  </figure>
+
+</footer>
+</body>
+</html>
+{
+  background-color: rgba(255, 255,255,0.77);
+  border-radius: 10px;
+  padding:50px;
+  width: 400px;
